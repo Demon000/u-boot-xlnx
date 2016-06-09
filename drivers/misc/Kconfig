@@ -249,6 +249,13 @@ config ZYNQ_GEM_I2C_MAC_OFFSET
 	help
 	  Set the MAC offset for i2C.
 
+config ZYNQ_GEM_SPI_MAC_OFFSET
+	hex "Set the SPI MAC offset"
+	default 0x0
+	depends on DM_SPI
+	help
+	  Set the MAC offset for spi.
+
 if I2C_EEPROM
 
 config SYS_I2C_EEPROM_ADDR
